@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mechamap"
+version = "0.5.0"
+description = "Mechanistic Interpretability toolkit"
+dependencies = [
+  "transformer_lens",
+  "typer",
+  "rich",
+  "graphviz",
+  "streamlit"
+]
+
+[project.scripts]
+mechamap = "mechamap.cli:app"
